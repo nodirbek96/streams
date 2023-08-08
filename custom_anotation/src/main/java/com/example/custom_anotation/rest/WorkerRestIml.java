@@ -4,7 +4,6 @@ import com.example.custom_anotation.dto.ErrorDto;
 import com.example.custom_anotation.dto.Response;
 import com.example.custom_anotation.dto.Worker;
 import com.example.custom_anotation.log.LogsService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
