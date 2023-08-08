@@ -1,32 +1,11 @@
-package com.example.custom_anotation.repository;
+package com.example.custom_anotation.employee;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
 public class EmployeeTempDatabase implements EmployeeCallbacks{
-    public final List<Employee> employees= Arrays.asList(
-            Employee.builder()
-            .age(20)
-            .id(10)
-            .name("Nodirbek")
-            .type("Vendor").build(),
-            Employee.builder()
-                    .age(20)
-                    .id(11)
-                    .name("Jahon")
-                    .type("Vendor").build(),
-            Employee.builder()
-                    .age(15)
-                    .id(12)
-                    .name("asal")
-                    .type("Permanent").build(),
-            Employee.builder()
-                    .age(12)
-                    .id(13)
-                    .name("Sarvar")
-                    .type("Permanent").build());
+    public final List<Employee> employees= new ArrayList<>();
     @Override
     public Employee insertEmployee(Employee employee) {
         Employee e=Employee.builder()

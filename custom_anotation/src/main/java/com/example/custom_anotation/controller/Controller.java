@@ -1,8 +1,10 @@
 package com.example.custom_anotation.controller;
 
-import com.example.custom_anotation.repository.Employee;
+import com.example.custom_anotation.employee.Employee;
 import com.example.custom_anotation.service.EmployeeService;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +21,7 @@ public class Controller {
         return employeeService.addNewEmployee(employee);
     }
     @GetMapping("/get-by-id")
-    public Employee getEmployeesById(@RequestParam Integer id){
+    public Employee getEmployeesById(@RequestParam  Integer id){
         return employeeService.getEmployeeById(id);
     }
     @GetMapping("/get-all")

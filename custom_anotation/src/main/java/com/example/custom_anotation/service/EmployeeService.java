@@ -1,7 +1,7 @@
 package com.example.custom_anotation.service;
 
-import com.example.custom_anotation.repository.Employee;
-import com.example.custom_anotation.repository.EmployeeRepository;
+import com.example.custom_anotation.employee.Employee;
+import com.example.custom_anotation.employee.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

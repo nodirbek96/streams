@@ -1,4 +1,4 @@
-package com.example.custom_anotation.repository;
+package com.example.custom_anotation.employee;
 
 import com.example.custom_anotation.anot.ValidateEmployeeType;
 import jakarta.validation.constraints.Min;
@@ -8,6 +8,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,5 +24,5 @@ public class Employee {
     @NotNull
     @Min(10)
     private Integer age;
-
+    private LocalDate date;
 }

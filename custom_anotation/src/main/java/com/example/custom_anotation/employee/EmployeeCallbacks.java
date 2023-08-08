@@ -1,4 +1,4 @@
-package com.example.custom_anotation.repository;
+package com.example.custom_anotation.employee;
 
 import java.util.List;
 
